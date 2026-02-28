@@ -6,13 +6,16 @@ body {
 
 .content {
     width: 640px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
+    max-width: 80%;
 }
 
 h1 {
     font-family: "Special Gothic Expanded One", sans-serif;
     margin: 0px;
+    font-size: xx-large;
 }
 
 img {
@@ -24,7 +27,7 @@ a {
     font-family: "Atkinson Hyperlegible", sans-serif;
     color: royalblue;
     text-decoration: underline;
-    font-size: small;
+    font-size: large;
     padding: 5px;
     width: 100%;
     text-align: left;
@@ -67,3 +70,4 @@ a:focus-visible {
     -4px -4px 8px rgba(255, 255, 255, 0.8);
 
 }
+
