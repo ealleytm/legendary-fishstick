@@ -79,6 +79,10 @@ a:focus-visible {
     -4px -4px 8px rgba(255, 255, 255, 0.8);
 }
 
+a:visited {
+    color: blueviolet;
+}
+
 a::after {
     content: '';
     position: absolute;
@@ -101,6 +105,7 @@ a:hover::after {
 .copyright {
     text-align: center;
 }
+
 
 
 
