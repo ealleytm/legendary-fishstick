@@ -32,12 +32,13 @@ p {
 }
 
 a {
+    position: relative;
     font-family: "Special Gothic Expanded One", sans-serif;
     color: royalblue;
     text-decoration: underline;
     font-size: large;
     padding: 15px;
-    width: 100%;
+    max-width: 100%;
     text-align: left;
     margin: 10px 0px;
     cursor: pointer;
@@ -81,13 +82,13 @@ a:focus-visible {
 a::after {
     content: '';
     position: absolute;
-    right: 15%;
+    right: 15px;
     top: 50%;
     transform: translateY(-50%);
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background: var(--muted);
+    background: grey;
     opacity: 0.35;
     transition: background 120ms, opacity 120ms;
 }
@@ -100,6 +101,7 @@ a:hover::after {
 .copyright {
     text-align: center;
 }
+
 
 
 
