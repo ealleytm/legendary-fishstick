@@ -78,9 +78,29 @@ a:focus-visible {
     -4px -4px 8px rgba(255, 255, 255, 0.8);
 }
 
+a::after {
+    content: '';
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--muted);
+    opacity: 0.35;
+    transition: background 120ms, opacity 120ms;
+}
+
+a:hover::after {
+    background: orangered;
+    opacity: 0.9;
+}
+
 .copyright {
     text-align: center;
 }
+
 
 
 
