@@ -1,5 +1,10 @@
+html {
+    height: 100%;
+    margin: 0;
+}
 body {
-    background-color: whitesmoke;
+    background: radial-gradient(circle at center top, whitesmoke 80%, silver);
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,6 +15,9 @@ body {
     max-width: 100%;
     display: flex;
     flex-direction: column;
+    margin: 15px;
+    border-radius: 8px;
+    background-color: whitesmoke;
 }
 
 h1 {
@@ -21,10 +29,10 @@ h1 {
 h2 {
     font-family: "Special Gothic Expanded One", sans-serif;
     margin: 0px 15px;
-    font-size: clamp(1rem, 2.25vw, 1.5rem); /* ~16px → ~24px */
+    font-size: clamp(1rem, 2.25vw, 1.5rem);
 }
 
-img {
+.hero-img {
     width: 100%;
     margin: 20px 0px;
 }
@@ -119,14 +127,3 @@ a:hover::after {
 .blueText {
     color: darkturquoise
 }
-
-
-
-
-
-
-
-
-
-
-
