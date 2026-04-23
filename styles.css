@@ -1,9 +1,30 @@
+:root {
+  --font-xl: clamp(2.75rem, 1.25rem + 1.6vw, 4.5rem);
+  --font-lg: clamp(1.35rem, 0.9rem + 0.7vw, 2.25rem);
+  --font-md: clamp(0.95rem, 0.7rem + 0.45vw, 1.45rem);
+  --font-sm: clamp(0.8rem, 0.55rem + 0.35vw, 1.05rem);
+
+  --gutter: 1rem;
+  --g1x: -10%;
+  --g1y: 0%;
+  --g2x: 85%;
+  --g2y: 100%;
+  --g3x: 50%;
+  --g3y: 10%;
+}
+
 html {
     height: 100%;
     margin: 0;
 }
+
 body {
-    background: radial-gradient(circle at center top, whitesmoke 80%, silver);
+  background:
+    radial-gradient(circle at var(--g1x) var(--g1y), rgba(0, 206, 209, 0.55) 0%, transparent 75%),
+    radial-gradient(circle at var(--g2x) var(--g2y), rgba(138, 43, 226, 0.55) 0%, transparent 85%),
+    radial-gradient(circle at var(--g3x) var(--g3y), rgba(255, 69, 0, 0.55) 0%, transparent 85%),
+    black
+    ;    
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -12,24 +33,26 @@ body {
 
 .content {
     width: 640px;
-    max-width: 100%;
+    max-width: 90%;
     display: flex;
     flex-direction: column;
-    margin: 15px;
-    border-radius: 8px;
+    margin: var(--gutter);
+    padding: var(--gutter);
+    border-radius: 10px;
     background-color: whitesmoke;
+    cursor: default;
 }
 
 h1 {
     font-family: "Special Gothic Expanded One", sans-serif;
-    margin: 0px 15px;
-    font-size: clamp(2rem, 6vw, 4rem);
+    margin: 0px var(--gutter);
+    font-size: var(--font-xl)
 }
 
 h2 {
     font-family: "Special Gothic Expanded One", sans-serif;
-    margin: 0px 15px;
-    font-size: clamp(1rem, 2.25vw, 1.5rem);
+    margin: 0px var(--gutter);
+    font-size: var(--font-lg);
 }
 
 .hero-img {
@@ -38,7 +61,7 @@ h2 {
 }
 
 p {
-    margin: 5px 15px;
+    margin: 5px var(--gutter);
     font-family: "Atkinson Hyperlegible", sans-serif;
     font-size: small;
     color: grey
@@ -50,7 +73,7 @@ a {
     color: royalblue;
     text-decoration: underline;
     font-size: large;
-    padding: 15px;
+    padding: var(--gutter);
     max-width: 100%;
     text-align: left;
     margin: 10px 0px;
@@ -99,7 +122,7 @@ a:visited {
 a::after {
     content: '';
     position: absolute;
-    right: 15px;
+    right: var(--gutter);
     top: 50%;
     transform: translateY(-50%);
     width: 5px;
