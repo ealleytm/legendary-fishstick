@@ -1,6 +1,6 @@
 :root {
-  --font-xl: clamp(2.75rem, 1.25rem + 1.6vw, 4.5rem);
-  --font-lg: clamp(1.35rem, 0.9rem + 0.7vw, 2.25rem);
+  --font-xl: clamp(1.25rem, 1.25rem + 1.6vw, 4.5rem);
+  --font-lg: clamp(0.9rem, 0.9rem + 0.7vw, 2.25rem);
   --font-md: clamp(0.95rem, 0.7rem + 0.45vw, 1.45rem);
   --font-sm: clamp(0.8rem, 0.55rem + 0.35vw, 1.05rem);
 
@@ -53,6 +53,7 @@ h2 {
     font-family: "Special Gothic Expanded One", sans-serif;
     margin: 0px var(--gutter);
     font-size: var(--font-lg);
+    color: #555;
 }
 
 .hero-img {
